@@ -143,11 +143,12 @@ a:hover {
   }
 
   .img-flex {
-    width: 40%;
+    width: 30%;
   }
 
   div {
-    width: 40%;
+    width: 30%;
+    margin-left: 12rem;
   }
 
 }
