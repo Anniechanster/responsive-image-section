@@ -25,17 +25,19 @@ body {
 }
 
 h1 {
-  font-size: 2rem;
+  padding-left: 1rem;
 }
 
 h2 {
   margin: 0;
   font-size: 1rem;
+  padding-left: 1rem;
 }
 
 p {
   margin: 0;
- }
+  padding-left: 1rem;
+}
 
 a {
   text-decoration: none;
@@ -46,12 +48,22 @@ a {
   display: inline-block;
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+  margin-left: 1rem;
+}
+
+.btn {
+  padding: .5em .75em;
 }
 
 .img-flex {
   width: 100%;
   display: block;
-  margin: 0;
+  text-align: center;
+}
+
+a:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 @media only screen and (min-width: 25em) {
@@ -70,6 +82,23 @@ a {
     line-height: 1.4;
   }
 
+  .img-flex {
+    display: inline-block;
+    text-align: right;
+    width: 49%;
+    vertical-align: top;
+  }
+
+  div {
+    display: inline-block;
+    text-align: left;
+    width: 49%;
+  }
+
+  img {
+    padding-top: 2rem;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -79,6 +108,23 @@ a {
     line-height: 1.5;
   }
 
+  h1 {
+    margin-top: 2rem;
+  }
+
+  img {
+    padding-right: 0;
+    padding-top: 2rem;
+  }
+
+  .img-flex {
+    width: 52%;
+  }
+
+  div {
+    width: 47%;
+  }
+
 }
 
 @media only screen and (min-width: 90em) {
@@ -86,6 +132,10 @@ a {
   html {
     font-size: 130%;
     line-height: 1.5;
+  }
+
+  section {
+    vertical-align: middle;
   }
 
 }
